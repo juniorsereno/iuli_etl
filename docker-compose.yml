@@ -1,0 +1,8 @@
+services:
+  iuli-etl:
+    build: .
+    env_file:
+      - login.env
+    volumes:
+      - .:/app
+    command: python main.py
